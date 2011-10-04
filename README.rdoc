@@ -37,5 +37,4 @@ Restart handler daemon:
 
 == License
 
-HoptoadRabbitMQNotifier is Copyright © 2011 Tracey Eubanks. It is free software, and may be redistributed under the terms specified in the MIT-LICENSE file.
-
+HoptoadRabbitMQNotifier: Copyright © 2011 Tracey Eubanks. It is free software, and may be redistributed under the terms specified in the MIT-LICENSE file.
