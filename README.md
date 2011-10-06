@@ -22,7 +22,12 @@ Configure the RabbitMQ handler by defining it's address in <tt>config/initialize
 
   ErrbitRabbitMQHandler.configure do |config|
     # Address to bind to listen exception notifications
-    config.uri = "tcp://127.0.0.1:9998"
+    config.rabbit_host = "127.0.0.1"
+    # optional config variables
+    # config.rabbit_port          = 5672
+    # config.rabbit_routing_key   = :routing_key
+    # config.rabbit_queue         = :a_queue
+    # config.rabbit_exchange      = :some_exchange
   end
 
 Starting handler daemon:
@@ -33,6 +38,10 @@ Stop handler daemon:
 
 Restart handler daemon:
   APP_ROOT=/path/to/app/root RAILS_ENV=production errbit_rabbitmq_handler restart
+
+--
+For a more detailed look at how to configure RabbitMQ, look at these guides:
+http://rdoc.info/github/ruby-amqp/amqp/master/file/docs/DocumentationGuidesIndex.textile
 
 
 == License
